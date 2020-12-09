@@ -12,7 +12,17 @@ These are notes from the [Certified Kubernetes Administrator Course](https://kod
 
   - [01-Core-Concepts-Section-Introduction](docs/02-Core-Concepts/01-Core-Concepts-Section-Introduction.md)
   - [02-Cluster-Architecture](docs/02-Core-Concepts/02-Cluster-Architecture.md)
+      - Master node / control plane
+          - etcd cluster
+          - kube-apiserver
+          - kube controller manager (e.g.: node controller)
+          - kube-scheduler
+      - Worker nodes
+          - kubelet
+          - kube-proxy
+          - container runtime engine (e.g.: docker, container-d)
   - [03-ETCD-For-Beginners](docs/02-Core-Concepts/03-ETCD-For-Beginners.md)
+      - Runs on port 2379
   - [04-ETCD-in-Kubernetes](docs/02-Core-Concepts/04-ETCD-in-Kubernetes.md)
   - [05-Kube-API-Server](docs/02-Core-Concepts/05-Kube-API-Server.md)
   - [06-Kube-Controller-Manager](docs/02-Core-Concepts/06-Kube-Controller-Manager.md)
