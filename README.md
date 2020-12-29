@@ -1,4 +1,4 @@
-# [Certified Kubernetes Administrator (CKA) Course]((https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/))
+# [Certified Kubernetes Administrator (CKA) Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
 
 ## General
 * [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
