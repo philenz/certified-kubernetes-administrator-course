@@ -1,4 +1,7 @@
 # [Certified Kubernetes Administrator (CKA) Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
+* [Udemy](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
+* [KodeKloud Practice Tests](https://kodekloud.com/courses/enrolled/675080)
+
 
 ## General
 * [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
@@ -45,6 +48,18 @@
   - [08-Kubelet](docs/02-Core-Concepts/08-Kubelet.md)
   - [09-Kube-Proxy](docs/02-Core-Concepts/09-Kube-Proxy.md)
   - [10-Pods](docs/02-Core-Concepts/10-Pods.md)
+  ```yml
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: fred
+    labels:
+      app: fender
+  spec:
+    containers:
+      - name: nginx-container
+        image: nginx
+  ```
   - [11-Practice-Test-Introduction](docs/02-Core-Concepts/11-Practice-Test-Introduction.md)
   - [12-Practice-Test-PODs](docs/02-Core-Concepts/12-Practice-Test-PODs.md)
   - [13-ReplicaSets](docs/02-Core-Concepts/13-ReplicaSets.md)
