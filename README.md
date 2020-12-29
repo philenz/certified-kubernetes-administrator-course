@@ -1,6 +1,21 @@
-# Certified Kubernetes Administrator (CKA) Course
+# [Certified Kubernetes Administrator (CKA) Course]((https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/))
 
-These are notes from the [Certified Kubernetes Administrator Course](https://kodekloud.com/courses/enrolled/539883) hosted on KodeKloud.
+## General
+* [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
+* [Curriculum](https://github.com/cncf/curriculum)
+* [Candidate Handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
+* [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
+
+## Repositories
+* [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
+* Forked to `~/src/kubernetes-the-hard-way`
+* [Reference Notes for lectures and labs](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
+* Forked to this repository
+
+## Study Guides
+* https://github.com/David-VTUK/CKA-StudyGuide
+* https://github.com/burkeazbill/cka-studyguide
+* https://medium.com/@andreistefanciprian/from-zero-kubernetes-knowledge-to-getting-both-cka-and-ckad-certifications-c70ba503d6e0
 
 # Sections
 
