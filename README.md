@@ -2,7 +2,6 @@
 * [Udemy](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
 * [KodeKloud Practice Tests](https://kodekloud.com/courses/enrolled/675080)
 
-
 ## General
 * [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
 * [Curriculum](https://github.com/cncf/curriculum)
@@ -60,15 +59,84 @@
       - name: nginx-container
         image: nginx
   ```
+  ```bash
+  kubectl run redis --image=redis --dry-run=client -o yaml > redis.yaml
+  ```
   - [11-Practice-Test-Introduction](docs/02-Core-Concepts/11-Practice-Test-Introduction.md)
   - [12-Practice-Test-PODs](docs/02-Core-Concepts/12-Practice-Test-PODs.md)
   - [13-ReplicaSets](docs/02-Core-Concepts/13-ReplicaSets.md)
+  ```yml
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    name: myreplicaset
+    labels:
+      app: myapp
+      type: front-end
+  spec:
+    template:
+      metadata:
+        name: barney
+        labels:
+          app: rubble
+          type: front-end
+      spec:
+        containers:
+          - name: nginx-container
+            image: nginx
+    replicas: 3
+    selector:
+      matchLabels:
+        type: front-end
+  ```
   - [14-Practice-Tests-ReplicaSet](docs/02-Core-Concepts/14-Practice-Tests-ReplicaSet.md)
   - [15-Deployments](docs/02-Core-Concepts/15-Deployments.md)
+  ```bash
+  kubectl create deployment httpd-frontend --replicas=3 --image=httpd:2.4-alpine --dry-run=client -o yaml > deploy.yaml
+  ```
   - [16-Practice-Tests-Deployments](docs/02-Core-Concepts/16-Practice-Tests-Deployments.md)
   - [17-Namespaces](docs/02-Core-Concepts/17-Namespaces.md)
+      - On install: kube-system / Default / kube-public
+      - DNS: `db.dev.svc.cluster.local`
+      ```bash
+      kubectl get-pods --all-namespaces
+      kubectl config set-context $(kubectl config current-context) --namespace=dev
+      ```
   - [18-Practice-Test-Namespaces](docs/02-Core-Concepts/18-Practice-Test-Namespaces.md)
   - [19-Services](docs/02-Core-Concepts/19-Services.md)
+      - NodePort
+      ```yml
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: front-end
+      spec:
+        type: NodePort
+        ports:
+          - targetPort: 80
+            port: 80
+            nodePort: 30008
+        selector:
+          app: myapp
+          type: front-end
+      ```
+      - ClusterIp
+      ```yml
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: back-end
+      spec:
+        type: ClusterIp
+        ports:
+          - targetPort: 80
+            port: 80
+        selector:
+          app: myapp
+          type: back-end
+      ```
+      - LoadBalancer
+          - Config same as NodePort, just change type to LoadBalancer
   - [20-Services-ClusterIP](docs/02-Core-Concepts/20-Services-ClusterIP.md)
   - [21-Practice-Test-Services](docs/02-Core-Concepts/21-Practice-Test-Services.md)
   - [22-Imperative-Commands-with-kubectl](docs/02-Core-Concepts/22-Imperative-Commands-with-kubectl.md)
