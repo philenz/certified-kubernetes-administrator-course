@@ -35,8 +35,14 @@
   - [04-Labels-and-Selectors](docs/03-Scheduling/04-Labels-and-Selectors.md)
   - [05-Practice-Test-Scheduling](docs/03-Scheduling/05-Practice-Test-Scheduling.md)
   - [06-Taints-and-Tolerations](docs/03-Scheduling/06-Taints-and-Tolerations.md)
+  ```bash
+  # taint
+  kubectl taint nodes node1 app=blue:NoSchedule
+  # untaint
+  kubectl taint nodes node1 app=blue:NoSchedule-
+  ```
   - [07-Practice-Test-Taints-and-Tolerations](docs/03-Scheduling/07-Practice-Test-Taints-and-Tolerations.md)
-  - [08-Node-Selectors](docs/03-Scheduling/08-Node-Selectors.md)
+  - **HERE>>>** [08-Node-Selectors](docs/03-Scheduling/08-Node-Selectors.md)
   - [09-Node-Affinity](docs/03-Scheduling/09-Node-Affinity.md)
   - [10-Practice-Test-Node-Affinity](docs/03-Scheduling/10-Practice-Test-Node-Affinity.md)
   - [11.Taints-and-Tolerations-vs-Node-Affinity](docs/03-Scheduling/11.Taints-and-Tolerations-vs-Node-Affinity.md)
