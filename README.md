@@ -18,8 +18,15 @@
 * https://github.com/David-VTUK/CKA-StudyGuide
 * https://github.com/burkeazbill/cka-studyguide
 * https://medium.com/@andreistefanciprian/from-zero-kubernetes-knowledge-to-getting-both-cka-and-ckad-certifications-c70ba503d6e0
+* [CKA Simulator](https://killer.sh/cka)
 
 # Sections
+
+```bash
+source <(kubectl completion bash)
+alias k=kubectl
+complete -F __start_kubectl k
+```
 
 - [01-Introduction](docs/01-Introduction)
   - [01-Course-Introduction](docs/01-Introduction/01-Course-Introduction.md)
@@ -27,38 +34,9 @@
   
 - [02-Core-Concepts](02CoreConcepts.md)
   
-- [03-Scheduling](docs/03-Scheduling)
-
-  - [01-Scheduling-Section-Introduction](docs/03-Scheduling/01-Scheduling-Section-Introduction.md)
-  - [02-Manual-Scheduling](docs/03-Scheduling/02-Manual-Scheduling.md)
-  - [03-Practice-Test-Manual-Scheduling](docs/03-Scheduling/03-Practice-Test-Manual-Scheduling.md)
-  - [04-Labels-and-Selectors](docs/03-Scheduling/04-Labels-and-Selectors.md)
-  - [05-Practice-Test-Scheduling](docs/03-Scheduling/05-Practice-Test-Scheduling.md)
-  - [06-Taints-and-Tolerations](docs/03-Scheduling/06-Taints-and-Tolerations.md)
-  ```bash
-  # taint
-  kubectl taint nodes node1 app=blue:NoSchedule
-  # untaint
-  kubectl taint nodes node1 app=blue:NoSchedule-
-  ```
-  - [07-Practice-Test-Taints-and-Tolerations](docs/03-Scheduling/07-Practice-Test-Taints-and-Tolerations.md)
-  - **HERE>>>** [08-Node-Selectors](docs/03-Scheduling/08-Node-Selectors.md)
-  - [09-Node-Affinity](docs/03-Scheduling/09-Node-Affinity.md)
-  - [10-Practice-Test-Node-Affinity](docs/03-Scheduling/10-Practice-Test-Node-Affinity.md)
-  - [11.Taints-and-Tolerations-vs-Node-Affinity](docs/03-Scheduling/11.Taints-and-Tolerations-vs-Node-Affinity.md)
-  - [12-Resource-Limits](docs/03-Scheduling/12-Resource-Limits.md)
-  - [13-Practice-Test-Resource-Limits](docs/03-Scheduling/13-Practice-Test-Resource-Limits.md)
-  - [14-DaemonSets](docs/03-Scheduling/14-DaemonSets.md)
-  - [15-Practice-Test-DaemonSets](docs/03-Scheduling/15-Practice-Test-DaemonSets.md)
-  - [16-Static-Pods](docs/03-Scheduling/16-Static-Pods.md)
-  - [17-Practice-Test-StaticPods](docs/03-Scheduling/17-Practice-Test-StaticPods.md)
-  - [18-Multiple-Schedulers](docs/03-Scheduling/18-Multiple-Schedulers.md)
-  - [19-Practice-Test-Multiple-Schedulers](docs/03-Scheduling/19-Practice-Test-Multiple-Schedulers.md)
-  - [20-Configuring-Kubernetes-Schedulers](docs/03-Scheduling/20-Configuring-Kubernetes-Schedulers.md)
-  - [21-Download-Presentation-Deck](docs/03-Scheduling/21-Download-Presentation-Deck.md)
-
+- [03-Scheduling](03Scheduling.md)
+  
 - [04-Logging-and-Monitoring](docs/04-Logging-and-Monitoring)
-
   - [01-Logging-and-Monitoring-Section-Introduction](docs/04-Logging-and-Monitoring/01-Logging-and-Monitoring-Section-Introduction.md)
   - [02-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/02-Monitor-Cluster-Components.md)
   - [03-Practice-Test-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/03-Practice-Test-Monitor-Cluster-Components.md)
@@ -66,8 +44,7 @@
   - [05-Download-Presentation-Deck](docs/04-Logging-and-Monitoring/05-Download-Presentation-Deck.md)
   - [06-Practice-Test-Managing-Application-Logs](docs/04-Logging-and-Monitoring/06-Practice-Test-Managing-Application-Logs.md)
   
-- [05-Application-Lifecycle-Management](docs/05-Application-Lifecycle-Management)
-
+- **>>>HERE >>>** [05-Application-Lifecycle-Management](docs/05-Application-Lifecycle-Management)
   - [01-Application-Lifecycle-Management--Section-Introduction](docs/05-Application-Lifecycle-Management/01-Application-Lifecycle-Management--Section-Introduction.md)
   - [02-RollingUpdates-and-Rollback](docs/05-Application-Lifecycle-Management/02-RollingUpdates-and-Rollback.md)
   - [03-Practice-Test-RollingUpdates-Rollback](docs/05-Application-Lifecycle-Management/03-Practice-Test-RollingUpdates-Rollback.md)
@@ -88,7 +65,6 @@
   - [18.Download-Presentation-Deck](docs/05-Application-Lifecycle-Management/18.Download-Presentation-Deck.md)
   
 - [06-Cluster-Maintenance](docs/06-Cluster-Maintenance)
-
   - [01-Cluster-Maintenance-Section-Introduction](docs/06-Cluster-Maintenance/01-Cluster-Maintenance-Section-Introduction.md)
   - [02-OS-Upgrades](docs/06-Cluster-Maintenance/02-OS-Upgrades.md)
   - [03-Practice-Test-OS-Upgrades](docs/06-Cluster-Maintenance/03-Practice-Test-OS-Upgrades.md)
@@ -100,9 +76,7 @@
   - [09-Practice-Test-Backup-and-Restore-Methods](docs/06-Cluster-Maintenance/09-Practice-Test-Backup-and-Restore-Methods.md)
   - [10-Download-Presentation-Deck](docs/06-Cluster-Maintenance/10-Download-Presentation-Deck.md)
   
-
 - [07-Security](docs/07-Security)
-  
   - [01-Security-Section-Introduction](docs/07-Security/01-Security-Section-Introduction.md)
   - [02-Kubernetes-Security-Primitives](docs/07-Security/02-Kubernetes-Security-Primitives.md)
   - [03-Authentication](docs/07-Security/03-Authentication.md)
@@ -134,7 +108,6 @@
 
 
 - [08-Storage](docs/08-Storage)
-
   - [01-Storage-Section-Introduction](docs/08-Storage/01-Storage-Section-Introduction.md)
   - [02-Introduction-to-Docker-Storage](docs/08-Storage/02-Introduction-to-Docker-Storage.md)
   - [03-Storage-in-Docker](docs/08-Storage/03-Storage-in-Docker.md)
@@ -149,9 +122,7 @@
   - [12-Storage-Class](docs/08-Storage/12-Storage-Class.md)
   - [13-Practice-Test-Storage-Class](docs/08-Storage/13-Practice-Test-Storage-Class.md)
 
-
-- [09-Networking](docs/09-Networking)
-  
+- [09-Networking](docs/09-Networking) 
   - [01-Networking-Introduction](docs/09-Networking/01-Networking-Introduction.md)
   - [02-Pre-requisite-Switching-Routing-Gateways](docs/09-Networking/02-Pre-requisite-Switching-Routing-Gateways.md)
   - [03-Pre-requisite-DNS](docs/09-Networking/03-Pre-requisite-DNS.md)
@@ -179,9 +150,7 @@
   - [25-Practice-Test-CKA-Ingress-Net-2](docs/09-Networking/25-Practice-Test-CKA-Ingress-Net-2.md)
   - [26-Dowload-Presentation-Deck](docs/09-Networking/26-Dowload-Presentation-Deck.md)
 
-
-- [10-Install](docs/10-Install)
-  
+- [10-Install](docs/10-Install)  
   - [01-Section-Introduction](docs/10-Install/01-Section-Introduction.md)
   - [02-Designing-a-Kubernetes-Cluster](docs/10-Install/02-Designing-a-Kubernetes-Cluster.md)
   - [03-Choosing-Kuberneter-Infrastructure](docs/10-Install/03-Choosing-Kuberneter-Infrastructure.md)
@@ -213,9 +182,7 @@
   - [30-Solution-Install-a-K8s-cluster-kubeadm](docs/10-Install/30-Solution-Install-a-K8s-cluster-kubeadm.md)
   - [31-Download-Presentation-Deck](docs/10-Install/21-Download-Presentation-Deck.md)
 
-
-- [11-Troubleshooting](docs/11-Troubleshooting)
-  
+- [11-Troubleshooting](docs/11-Troubleshooting)  
   - [01-Troubelshooting-Section-Introduction](docs/11-Troubleshooting/01-Troubelshooting-Section-Introduction.md)
   - [02-Application-Failure](docs/11-Troubleshooting/02-Application-Failure.md)
   - [03-Solution-Application-Failure](docs/11-Troubleshooting/03-Solution-Application-Failure.md)
@@ -226,23 +193,17 @@
   - [08-Practice-Test-Worker-Node-Failure](docs/11-Troubleshooting/08-Practice-Test-Worker-Node-Failure.md)
   - [09-Solution-Worker-Node-Failure](docs/11-Troubleshooting/09-Solution-Worker-Node-Failure.md)
 
-
-- [12-Other-Topics](docs/12-Other-Topics)
-  
+- [12-Other-Topics](docs/12-Other-Topics)  
   - [01-Labs-JSON-PATH](docs/12-Other-Topics/01-Labs-JSON-PATH.md)
   - [02-Pre-Requisites-JSON-PATH](docs/12-Other-Topics/02-Pre-Requisites-JSON-PATH.md)
   - [03-Advance-Kubectl-Commands](docs/12-Other-Topics/03-Advance-Kubectl-Commands.md)
   - [04-Practice-Test-Advance-Kubectl-Commands](docs/12-Other-Topics/04-Practice-Test-Advance-Kubectl-Commands.md)
 
-
-- [13-Lightning-Labs](docs/13-Lightning-Labs)
-  
+- [13-Lightning-Labs](docs/13-Lightning-Labs)  
   - [01-Lightning-Labs-Introduction](docs/13-Lightning-Labs/01-Lightning-Labs-Introduction.md)
   - [02-Lightning-Lab-1](docs/13-Lightning-Labs/02-Lightning-Lab-1.md)
   
-
-- [14-Mock-Exams](docs/14-Mock-Exams)
-  
+- [14-Mock-Exams](docs/14-Mock-Exams)  
   - [01-Introduction](docs/14-Mock-Exams/01-Introduction.md)
   - [02-Mock-Exam-1](docs/14-Mock-Exams/02-Mock-Exam-1.md)
   - [03-Mock-Exam-2](docs/14-Mock-Exams/03-Mock-Exam-2.md)
