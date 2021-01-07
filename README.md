@@ -44,7 +44,7 @@ complete -F __start_kubectl k
   - [05-Download-Presentation-Deck](docs/04-Logging-and-Monitoring/05-Download-Presentation-Deck.md)
   - [06-Practice-Test-Managing-Application-Logs](docs/04-Logging-and-Monitoring/06-Practice-Test-Managing-Application-Logs.md)
   
-- **>>>HERE >>>** [05-Application-Lifecycle-Management](docs/05-Application-Lifecycle-Management)
+- [05-Application-Lifecycle-Management](docs/05-Application-Lifecycle-Management)
   - [01-Application-Lifecycle-Management--Section-Introduction](docs/05-Application-Lifecycle-Management/01-Application-Lifecycle-Management--Section-Introduction.md)
   - [02-RollingUpdates-and-Rollback](docs/05-Application-Lifecycle-Management/02-RollingUpdates-and-Rollback.md)
   - [03-Practice-Test-RollingUpdates-Rollback](docs/05-Application-Lifecycle-Management/03-Practice-Test-RollingUpdates-Rollback.md)
@@ -66,7 +66,7 @@ complete -F __start_kubectl k
   
 - [06-Cluster-Maintenance](docs/06-Cluster-Maintenance)
   - [01-Cluster-Maintenance-Section-Introduction](docs/06-Cluster-Maintenance/01-Cluster-Maintenance-Section-Introduction.md)
-  - [02-OS-Upgrades](docs/06-Cluster-Maintenance/02-OS-Upgrades.md)
+  - **>>>HERE >>>** [02-OS-Upgrades](docs/06-Cluster-Maintenance/02-OS-Upgrades.md)
   - [03-Practice-Test-OS-Upgrades](docs/06-Cluster-Maintenance/03-Practice-Test-OS-Upgrades.md)
   - [04-Kubernetes-Software-Versions](docs/06-Cluster-Maintenance/04-Kubernetes-Software-Versions.md)
   - [05-Cluster-Upgrade-Introduction](docs/06-Cluster-Maintenance/05-Cluster-Upgrade-Introduction.md)
