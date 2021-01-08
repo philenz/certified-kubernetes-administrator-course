@@ -1,0 +1,7 @@
+- [04-Logging-and-Monitoring](docs/04-Logging-and-Monitoring)
+  - [01-Logging-and-Monitoring-Section-Introduction](docs/04-Logging-and-Monitoring/01-Logging-and-Monitoring-Section-Introduction.md)
+  - [02-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/02-Monitor-Cluster-Components.md)
+  - [03-Practice-Test-Monitor-Cluster-Components](docs/04-Logging-and-Monitoring/03-Practice-Test-Monitor-Cluster-Components.md)
+  - [04-Managing-Application-Logs](docs/04-Logging-and-Monitoring/04-Managing-Application-Logs.md)
+  - [05-Download-Presentation-Deck](docs/04-Logging-and-Monitoring/05-Download-Presentation-Deck.md)
+  - [06-Practice-Test-Managing-Application-Logs](docs/04-Logging-and-Monitoring/06-Practice-Test-Managing-Application-Logs.md)
