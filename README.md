@@ -40,19 +40,9 @@ complete -F __start_kubectl k
   
 - [05-Application-Lifecycle-Management](05ApplicationLifecycleManagement.md)
   
-- [06-Cluster-Maintenance](docs/06-Cluster-Maintenance)
-  - [01-Cluster-Maintenance-Section-Introduction](docs/06-Cluster-Maintenance/01-Cluster-Maintenance-Section-Introduction.md)
-  - **>>>HERE >>>** [02-OS-Upgrades](docs/06-Cluster-Maintenance/02-OS-Upgrades.md)
-  - [03-Practice-Test-OS-Upgrades](docs/06-Cluster-Maintenance/03-Practice-Test-OS-Upgrades.md)
-  - [04-Kubernetes-Software-Versions](docs/06-Cluster-Maintenance/04-Kubernetes-Software-Versions.md)
-  - [05-Cluster-Upgrade-Introduction](docs/06-Cluster-Maintenance/05-Cluster-Upgrade-Introduction.md)
-  - [06-Practice-Test-Cluster-Upgrade-Process](docs/06-Cluster-Maintenance/06-Practice-Test-Cluster-Upgrade-Process.md)
-  - [07-Backup-and-Restore-Methods](docs/06-Cluster-Maintenance/07-Backup-and-Restore-Methods.md)
-  - [08-Working-With-ETCDCTL](docs/06-Cluster-Maintenance/08-Working-With-ETCDCTL.md)
-  - [09-Practice-Test-Backup-and-Restore-Methods](docs/06-Cluster-Maintenance/09-Practice-Test-Backup-and-Restore-Methods.md)
-  - [10-Download-Presentation-Deck](docs/06-Cluster-Maintenance/10-Download-Presentation-Deck.md)
+- [06-Cluster-Maintenance](06ClusterMaintenance.md)
   
-- [07-Security](docs/07-Security)
+- **>>>HERE >>>** [07-Security](docs/07-Security)
   - [01-Security-Section-Introduction](docs/07-Security/01-Security-Section-Introduction.md)
   - [02-Kubernetes-Security-Primitives](docs/07-Security/02-Kubernetes-Security-Primitives.md)
   - [03-Authentication](docs/07-Security/03-Authentication.md)
