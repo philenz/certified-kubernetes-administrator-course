@@ -27,6 +27,15 @@ source <(kubectl completion bash)
 alias k=kubectl
 complete -F __start_kubectl k
 ```
+```bash
+# az account set -s 'CloudOps_Learning'
+# add creds to kubeconfig
+# az aks get-credentials --resource-group cloudops-k8s --name cloudops-k8s-automation
+kubectl config get-contexts
+kubectl config current-context
+kubectl config set-context cloudops-k8s-automation --namespace=upandrunning
+kubectl config set-context cloudops-k8s-automation
+```
 
 - [01-Introduction](docs/01-Introduction)
   - [01-Course-Introduction](docs/01-Introduction/01-Course-Introduction.md)
