@@ -10,9 +10,9 @@
 
 ## Repositories
 * [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
-* Forked to `~/src/kubernetes-the-hard-way`
+    * Forked to `~/src/kubernetes-the-hard-way`
 * [Reference Notes for lectures and labs](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
-* Forked to this repository
+    * Forked to this repository
 
 ## Study Guides
 * https://github.com/David-VTUK/CKA-StudyGuide
@@ -22,6 +22,9 @@
 * https://medium.com/@emreodabas_20110/best-practices-for-cka-exam-9c1e51ea9b29
 * https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833
 * [CKA Simulator](https://killer.sh/cka)
+
+## Could be useful
+* [A visual guide on troubleshooting Kubernetes deployments](https://learnk8s.io/troubleshooting-deployments)
 
 # Sections
 
