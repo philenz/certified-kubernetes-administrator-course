@@ -59,20 +59,7 @@ kubectl config set-context cloudops-k8s-automation
   
 - [07-Security](07Security.md)
 
-- **** HERE [08-Storage](docs/08-Storage)
-  - [01-Storage-Section-Introduction](docs/08-Storage/01-Storage-Section-Introduction.md)
-  - [02-Introduction-to-Docker-Storage](docs/08-Storage/02-Introduction-to-Docker-Storage.md)
-  - [03-Storage-in-Docker](docs/08-Storage/03-Storage-in-Docker.md)
-  - [04-Volume-Driver-Plugins-in-Docker](docs/08-Storage/04-Volume-Driver-Plugins-in-Docker.md)
-  - [05-Container.Storage-Interface](docs/08-Storage/05-Container.Storage-Interface.md)
-  - [06-Volumes](docs/08-Storage/06-Volumes.md)
-  - [07-Persistent-Volumes](docs/08-Storage/07-Persistent-Volumes.md)
-  - [08-Persistent-Volume-Claims](docs/08-Storage/08-Persistent-Volume-Claims.md)
-  - [09-Using-PVC-in-PODs](docs/08-Storage/09-Using-PVC-in-PODs.md)
-  - [10-Practice-Test-Persistent-Volume-Claims](docs/08-Storage/10-Practice-Test-Persistent-Volume-Claims.md)
-  - [11-Download-Presentation-Deck](docs/08-Storage/11-Download-Presentation-Deck.md)
-  - [12-Storage-Class](docs/08-Storage/12-Storage-Class.md)
-  - [13-Practice-Test-Storage-Class](docs/08-Storage/13-Practice-Test-Storage-Class.md)
+- [08-Storage](08Storage.MD)
 
 - [09-Networking](docs/09-Networking) 
   - [01-Networking-Introduction](docs/09-Networking/01-Networking-Introduction.md)
