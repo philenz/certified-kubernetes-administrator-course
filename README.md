@@ -15,16 +15,15 @@
     * Forked to this repository
 
 ## Study Guides
-* https://github.com/David-VTUK/CKA-StudyGuide
-* https://github.com/burkeazbill/cka-studyguide
-* https://medium.com/@andreistefanciprian/from-zero-kubernetes-knowledge-to-getting-both-cka-and-ckad-certifications-c70ba503d6e0
-* https://rudimartinsen.com/cka-resources/
-* https://medium.com/@emreodabas_20110/best-practices-for-cka-exam-9c1e51ea9b29
-* https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833
-* [CKA Simulator](https://killer.sh/cka)
+* [Best Practices for CKA Exam](https://medium.com/@emreodabas_20110/best-practices-for-cka-exam-9c1e51ea9b29)
+* [Kubernetes Journey — CKA / CKAD Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)
+* [David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)
+* [From ZERO Kubernetes knowledge to getting both CKA and CKAD](https://medium.com/@andreistefanciprian/from-zero-kubernetes-knowledge-to-getting-both-cka-and-ckad-certifications-c70ba503d6e0)
+* [CKA Exam Study Resources](https://rudimartinsen.com/cka-resources/)
 
 ## Could be useful
 * [A visual guide on troubleshooting Kubernetes deployments](https://learnk8s.io/troubleshooting-deployments)
+* [CKA Simulator](https://killer.sh/cka)
 
 # Sections
 
