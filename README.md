@@ -26,7 +26,7 @@
 * [CKA Simulator](https://killer.sh/cka)
 
 # Sections
-
+* NB: Presentations in PDF format also in `docs ` directories
 ```bash
 source <(kubectl completion bash)
 alias k=kubectl
@@ -65,18 +65,32 @@ kubectl config set-context cloudops-k8s-automation
   - [02-Pre-requisite-Switching-Routing-Gateways](docs/09-Networking/02-Pre-requisite-Switching-Routing-Gateways.md)
   - [03-Pre-requisite-DNS](docs/09-Networking/03-Pre-requisite-DNS.md)
   - [04-Pre-requisite-CoreDNS](docs/09-Networking/04-Pre-requisite-CoreDNS.md)
+    - https://github.com/kubernetes/dns/blob/master/docs/specification.md
+    - https://coredns.io/plugins/kubernetes/
   - [05-Pre-requisite-Network-Namespace](docs/09-Networking/05-Pre-requisite-Network-Namespace.md)
+    - `ip netns exec mynamespace ip link`
+    - While testing the Network Namespaces, if you come across issues where you can't ping one namespace from the other, make sure you set the NETMASK while setting IP Address. ie: 192.168.1.10/24
+    - `ip -n red addr add 192.168.1.10/24 dev veth-red`
+    - Another thing to check is FirewallD/IP Table rules. Either add rules to IP Tables to allow traffic from one namespace to another. Or disable IP Tables all together (Only in a learning environment).
   - [06-Pre-requisite-Docker-Networking](docs/09-Networking/06-Pre-requisite-Docker-Networking.mdd)
   - [07-Pre-requisite-CNI](docs/09-Networking/07-Pre-requisite-CNI.md)
+    - `Plugins` define how different pieces of the container network are defined
+    - Sample plugins... `bridge`, `vlan`, `ipvlan`, `macvlan`, `windows`
   - [08-Cluster-Networking](docs/09-Networking/08-Cluster-Networking.md)
+    - [Installing kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) lists Kubernetes required ports
+    - [Deploy Weave network addon](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/#steps-for-the-first-control-plane-node)
   - [09-Practice-Test-Explore-Env](docs/09-Networking/09-Practice-Test-Explore-Env.md)
   - [10-Pod-Networking](docs/09-Networking/10-Pod-Networking.md)
+     - This is the bit not done oob by Kubernetes
+     - Goal is to ensure all pods can talk to each other
+     - Lots of implementations such as `WeaveWorks`
   - [11-CNI-in-Kubernetes](docs/09-Networking/11-CNI-in-Kubernetes.md)
+    - Configure CNI in `kubelet` startup
   - [12-CNI-weave](docs/09-Networking/12-CNI-weave.md)
   - [13-Practice-Test-CNI-weave](docs/09-Networking/13-Practice-Test-CNI-weave.md)
   - [14-Practice-Test-Deploy-Network-Solution](docs/09-Networking/14-Practice-Test-Deploy-Network-Solution.md)
   - [15-ipam-weave](docs/09-Networking/15-ipam-weave.md)
-  - [16-Practice-Test-Networking-weave](docs/09-Networking/16-Practice-Test-Networking-weave.md)
+  - *** HERE (204 practice test) [16-Practice-Test-Networking-weave](docs/09-Networking/16-Practice-Test-Networking-weave.md)
   - [17-Service-Networking](17-Service-Networking.md)
   - [18-Practice-Test-Service-Networking](docs/09-Networking/18-Practice-Test-Service-Networking.md)
   - [19-DNS-in-kubernetes](docs/09-Networking/19-DNS-in-kubernetes.md)
