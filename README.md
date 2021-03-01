@@ -24,6 +24,7 @@
 ## Could be useful
 * [A visual guide on troubleshooting Kubernetes deployments](https://learnk8s.io/troubleshooting-deployments)
 * [CKA Simulator](https://killer.sh/cka)
+* [KubeAcademy](https://kube.academy/courses)
 
 # Sections
 * NB: Presentations in PDF format also in `docs ` directories
