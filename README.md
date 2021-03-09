@@ -42,6 +42,29 @@ kubectl config current-context
 kubectl config set-context cloudops-k8s-automation --namespace=upandrunning
 kubectl config set-context cloudops-k8s-automation
 ```
+```bash
+# connect to microk8s cluster...
+philenz@NZL170:~$ ssh ztlnx
+Welcome to Ubuntu 20.10 (GNU/Linux 5.8.0-44-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+Last login: Tue Mar  9 18:13:16 2021 from 172.22.117.101
+philenz@phil-Inspiron:~$ microk8s.status
+```
+```powershell
+# use minikube...
+PS C:\Users\Phil.Evans> minikube status
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+```
 
 - [01-Introduction](docs/01-Introduction)
   - [01-Course-Introduction](docs/01-Introduction/01-Course-Introduction.md)
