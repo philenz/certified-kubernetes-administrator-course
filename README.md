@@ -114,14 +114,56 @@ kubeconfig: Configured
   - [13-Practice-Test-CNI-weave](docs/09-Networking/13-Practice-Test-CNI-weave.md)
   - [14-Practice-Test-Deploy-Network-Solution](docs/09-Networking/14-Practice-Test-Deploy-Network-Solution.md)
   - [15-ipam-weave](docs/09-Networking/15-ipam-weave.md)
-  - *** HERE (204 practice test) [16-Practice-Test-Networking-weave](docs/09-Networking/16-Practice-Test-Networking-weave.md)
+  - [16-Practice-Test-Networking-weave](docs/09-Networking/16-Practice-Test-Networking-weave.md)
   - [17-Service-Networking](17-Service-Networking.md)
+    - Service types...
+    1. `ClusterIP`: the default type, will create a Service resource with an IP address from the cluster’s pool, such a Service will be available from within the cluster only (or with kube-proxy)
+    1. `NodePort`: will open a TCP port on each WorkerNode EС2, “behind it” automatically will create a ClusterIP Service and will route traffic from this TCP port on an ЕС2 to this ClusterIP – such a service will be accessible from the world (obviously, if an EC2 has a public IP), or within a VPC
+    1. `LoadBalancer`: will create an external Load Balancer (AWS Classic LB), “behind it” automatically will create a NodePort, then ClusterIP and in this way will route traffic from the Load Balancer to a pod in a cluster
+    1. `ExternalName`: something like a DNS-proxy – in response to such a Service will return a record taken via CNAME of the record specified in the externalName
+    - IP range for pods and services must not overlap
   - [18-Practice-Test-Service-Networking](docs/09-Networking/18-Practice-Test-Service-Networking.md)
   - [19-DNS-in-kubernetes](docs/09-Networking/19-DNS-in-kubernetes.md)
+      - Service DNS
+          - _service.namespace.type.root_
+          - web-service.apps.svc.cluster.local
+      - Pod DNS (if enabled)
+          - _pod-ip.namespace.type.root_
+          - 10-244-2-5.apps.pod.cluster.local
   - [20-CoreDNS-in-Kubernetes](docs/09-Networking/20-CoreDNS-in-Kubernetes.md)
+      - `/etc/coredns/Corefile`
+      - `kubectl describe configmap coredns -n kube-system`
   - [21-Practice-Test-CoreDNS-in-Kubernetes](docs/09-Networking/21-Practice-Test-CoreDNS-in-Kubernetes.md)
   - [22-Ingress](docs/09-Networking/22-Ingress.md)
+      - Deploy an Ingress controller (e.g.: nginx, haproxy, traefik)
+      - Configure Ingress resources (config file)
+      - Ingress Controller manifests...
+          - Deployment
+          - Service
+          - ConfigMap
+          - Auth
+      - Ingress resource = manifest Kind = Ingress
   - [23-Ingress-Annotations-and-rewrite-target](docs/09-Networking/23-Ingress-Annotations-and-rewrite-target.md)
+    - https://kubernetes.github.io/ingress-nginx/examples/rewrite/
+    ```yaml
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /$2
+      name: rewrite
+      namespace: default
+    spec:
+      rules:
+      - host: rewrite.bar.com
+        http:
+          paths:
+          - backend:
+              serviceName: http-svc
+              servicePort: 80
+            path: /something(/|$)(.*)
+    ```
+  - `UpTo: Ingress Networking 1... but getting error pulling images from quay.io!`
   - [24-Practice-Test-CKA-Ingress-Net-1](docs/09-Networking/24-Practice-Test-CKA-Ingress-Net-1.md)
   - [25-Practice-Test-CKA-Ingress-Net-2](docs/09-Networking/25-Practice-Test-CKA-Ingress-Net-2.md)
   - [26-Dowload-Presentation-Deck](docs/09-Networking/26-Dowload-Presentation-Deck.md)
