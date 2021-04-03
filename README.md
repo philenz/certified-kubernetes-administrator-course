@@ -10,7 +10,7 @@
 
 ## Repositories
 * [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
-    * Forked to `~/src/kubernetes-the-hard-way`
+    * Cloned to `~/src/kubernetes-the-hard-way`
 * [Reference Notes for lectures and labs](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
     * Forked to this repository
 
@@ -33,6 +33,7 @@ alias k=kubectl
 complete -F __start_kubectl k
 ```
 ```bash
+# az aks install-cli
 # az account set -s 'CloudOps_Learning'
 # add creds to kubeconfig
 # az aks get-credentials --resource-group cloudops-k8s --name cloudops-k8s-automation
