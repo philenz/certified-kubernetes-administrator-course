@@ -15,6 +15,7 @@
     * Forked to this repository
 
 ## Study Guides
+* [Kubernetes Journey - CKA Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)... and [video](https://www.youtube.com/watch?app=desktop&v=RoSacSrr2oQ)
 * [Best Practices for CKA Exam](https://medium.com/@emreodabas_20110/best-practices-for-cka-exam-9c1e51ea9b29)
 * [Kubernetes Journey — CKA / CKAD Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)
 * [David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)
@@ -25,6 +26,8 @@
 * [A visual guide on troubleshooting Kubernetes deployments](https://learnk8s.io/troubleshooting-deployments)
 * [CKA Simulator](https://killer.sh/cka)
 * [KubeAcademy](https://kube.academy/courses)
+* [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
+* [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 
 ## Setup
 ```bash
