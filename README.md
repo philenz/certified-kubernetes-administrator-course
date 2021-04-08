@@ -9,10 +9,11 @@
 * [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 
 ## Repositories
-* [Kubernetes The Hard Way On VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
+* [Kubernetes the Hard Way on VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
     * Cloned to `~/src/kubernetes-the-hard-way`
 * [Reference Notes for lectures and labs](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
     * Forked to this repository
+* [Kubernetes the Hard Way on Azure](https://github.com/carlosonunez/kubernetes-the-hard-way-on-azure)
 
 ## Study Guides
 * [Kubernetes Journey - CKA Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)... and [video](https://www.youtube.com/watch?app=desktop&v=RoSacSrr2oQ)
@@ -44,6 +45,7 @@ kubectl config get-contexts
 kubectl config current-context
 kubectl config set-context cloudops-k8s-automation --namespace=upandrunning
 kubectl config set-context cloudops-k8s-automation
+kubectl api-resources
 ```
 ```bash
 # connect to microk8s cluster...
