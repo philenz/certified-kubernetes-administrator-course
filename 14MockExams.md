@@ -12,6 +12,10 @@
 * `3/12 Correct`: Create a namespace named apx-x9984574
 * `4/12 Correct`: Get the list of nodes in JSON format and store it in a file at /opt/outputs/nodes-z3444kd9.json
 * `5/12 Correct`: Create a service messaging-service to expose the messaging application within the cluster on port 6379
+* Should use expose... no need to specify selector...
+  ```bash
+  kubectl expose pod messaging --name messaging-service --port 6379 --target-port 6379
+  ```
 * `6/12 Correct`: Create a deployment named hr-web-app using the image kodekloud/webapp-color with 2 replicas
 * `7/12 Correct`: Create a static pod named static-busybox on the master node that uses the busybox image and the command sleep 1000
 * `8/12 Correct`: Create a POD in the finance namespace named temp-bus with the image redis:alpine
@@ -25,7 +29,16 @@
   * Did it totally differently... created a service... but got port and nodeport wrong way round
 * `11/12 Correct`: Use JSON PATH query to retrieve the osImages of all the nodes and store it in a file /opt/outputs/nodes_os_x43kj56.txt
 * `12/12 Wrong`: Create a Persistent Volume with the given specification
-  * Just got the host path wrong `/pv/data-analytics`
+  * Got the specification of host path wrong
+  * Really useful!!!!...
+  ```bash
+  kubectl explain pv --recursive | less
+  ```
+  * manifest needs...
+  ```yaml
+  hostPath:
+    path: /blah
+  ```
 # Exam 2
 # Exam 3
 
