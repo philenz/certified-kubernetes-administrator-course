@@ -16,6 +16,7 @@
 * [Kubernetes the Hard Way on Azure](https://github.com/carlosonunez/kubernetes-the-hard-way-on-azure)
 
 ## Study Guides
+* [Kubernetes Certified Administration](https://github.com/walidshaari/Kubernetes-Certified-Administrator)
 * [Kubernetes Journey - CKA Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)... and [video](https://www.youtube.com/watch?app=desktop&v=RoSacSrr2oQ)
 * [Best Practices for CKA Exam](https://medium.com/@emreodabas_20110/best-practices-for-cka-exam-9c1e51ea9b29)
 * [Kubernetes Journey — CKA / CKAD Exam Tips](https://itnext.io/kubernetes-journey-cka-ckad-exam-tips-ff73e4672833)
