@@ -30,6 +30,7 @@
 * [KubeAcademy](https://kube.academy/courses)
 * [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy)
 * [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+* [Native Kubernetes Continuous Delivery](https://kurtmadel.com/posts/native-kubernetes-continuous-delivery/native-k8s-cd/)
 
 ## Setup
 ```bash
