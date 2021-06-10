@@ -7,6 +7,7 @@
 * [Curriculum](https://github.com/cncf/curriculum)
 * [Candidate Handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
 * [Exam Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
+* [killer.sh news](https://www.cncf.io/announcements/2021/06/02/linux-foundation-kubernetes-certifications-now-include-exam-simulator/)
 
 ## Repositories
 * [Kubernetes the Hard Way on VirtualBox](https://github.com/mmumshad/kubernetes-the-hard-way)
